@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nohonoramongthieves",
+	"version": "${version}",
+	"name": "No Honor Among Thieves",
+	"description": "This mod adds an honor system to the game of Minecraft. Actions which harm peaceful mobs and the environment will net the player negative honor points, while actions which harm dangerous monsters and heal the environment will net the player positive honor points. These honor points determine how 'moral' the player is, placing them on a relative tier on a scale, which is associated with different punishments and rewards.",
+	"authors": [
+		"SuspiciousTofu"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nohonoramongthieves/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.suspicioustofu.nohonoramongthieves.NoHonorAmongThieves"
+		],
+		"client": [
+			"net.suspicioustofu.nohonoramongthieves.NoHonorAmongThievesClient"
+		],
+		"fabric-datagen": [
+			"net.suspicioustofu.nohonoramongthieves.NoHonorAmongThievesDataGenerator"
+		]
+	},
+	"mixins": [
+		"nohonoramongthieves.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
